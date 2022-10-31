@@ -30,7 +30,7 @@ gem "jbuilder"
 gem 'bcrypt'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
-
+gem 'rails_admin'
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 gem 'active_model_serializers'
@@ -72,3 +72,4 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+gem "sassc-rails"

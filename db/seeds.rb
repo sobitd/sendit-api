@@ -13,7 +13,8 @@ User.create!([
                  "email_address": 'datazamp6@gmail.com',
                  "phone_number": '0737423431',
                  "username": 'apo',
-                 "password_digest": 'boilerplate5554'
+                 "password_digest": 'boilerplate5554',
+                 "isAdmin": true
                },
                {
                  "first_name": 'Faka',
@@ -21,7 +22,8 @@ User.create!([
                  "email_address": 'datagam@gmail.com',
                  "phone_number": '0733466577',
                  "username": 'redo',
-                 "password_digest": 'boilerplate99944'
+                 "password_digest": 'boilerplate99944',
+                 "isAdmin": false
                },
                {
                  "first_name": 'Drey ',
@@ -29,7 +31,8 @@ User.create!([
                  "email_address": 'mandem@gmail.com',
                  "phone_number": '0734662575',
                  "username": 'preme',
-                 "password_digest": 'boilerplate9933'
+                 "password_digest": 'boilerplate9933',
+                 "isAdmin": false
                },
                {
                  "first_name": 'Brian',
@@ -37,7 +40,9 @@ User.create!([
                  "email_address": 'prpm@gmail.com',
                  "phone_number": '0721466577',
                  "username": 'prrred',
-                 "password_digest": 'boilerplatet644'
+                 "password_digest": 'boilerplatet644',
+                 "isAdmin": false
+
                },
                {
                  "first_name": 'Grace',
@@ -45,7 +50,8 @@ User.create!([
                  "email_address": 'deezer@gmail.com',
                  "phone_number": '0712436577',
                  "username": 'skrrr',
-                 "password_digest": 'boilerplate45944'
+                 "password_digest": 'boilerplate45944',
+                 "isAdmin": false
                }
 
              ])
@@ -53,7 +59,7 @@ User.create!([
 parcel_one = Parcel.create!(recipient_address: 'Moi Avenue 21',
                             recipient_name: 'Laban Kimtai',
                             recipient_contact: '0713245678',
-                            order_status: "in-transit",
+                            order_status: 'in-transit',
                             weight: 10,
                             from: 8,
                             destination: 12,
@@ -62,7 +68,7 @@ parcel_one = Parcel.create!(recipient_address: 'Moi Avenue 21',
 parcel_two = Parcel.create!(recipient_address: '16 Haille Selassie',
                             recipient_name: 'Steven Kipsang',
                             recipient_contact: '0712346789',
-                            order_status: "processed",
+                            order_status: 'processed',
                             weight: 4,
                             from: 3,
                             destination: 4,
@@ -71,7 +77,7 @@ parcel_two = Parcel.create!(recipient_address: '16 Haille Selassie',
 parcel_three = Parcel.create(recipient_address: '2nd Harrambe Avenue',
                              recipient_name: 'Shella Chep',
                              recipient_contact: '0714852369',
-                             order_status: "delivered",
+                             order_status: 'delivered',
                              weight: 5,
                              from: 5,
                              destination: 13,
@@ -80,7 +86,7 @@ parcel_three = Parcel.create(recipient_address: '2nd Harrambe Avenue',
 parcel_four = Parcel.create(recipient_address: 'Desai Rd Ngara',
                             recipient_name: 'Grace Thungu',
                             recipient_contact: '0789632541',
-                            order_status: "delivered",
+                            order_status: 'delivered',
                             weight: 8,
                             from: 12,
                             destination: 16,
@@ -89,7 +95,7 @@ parcel_four = Parcel.create(recipient_address: 'Desai Rd Ngara',
 parcel_five = Parcel.create(recipient_address: '33rd St Eastleigh',
                             recipient_name: 'Elisha Nyakwar',
                             recipient_contact: '0725465789',
-                            order_status: "processed",
+                            order_status: 'processed',
                             weight: 8,
                             from: 1,
                             destination: 6,
